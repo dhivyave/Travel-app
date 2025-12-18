@@ -1,0 +1,136 @@
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+.card {
+  height: 100vh;
+  width: 100%;
+  background-image: url('https://images.pexels.com/photos/1430677/pexels-photo-1430677.jpeg?cs=srgb&dl=pexels-asadphoto-1430677.jpg&fm=jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.card h1, .card h2 {
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  font-family: 'Poppins', sans-serif;
+}
+
+.card h1 {
+  padding-top: 30px;
+  font-size: 32px;
+}
+.card h2 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+
+.explore {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+}
+
+.destination-card {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  padding: 15px;
+  text-align: center;
+  width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.5);
+}
+
+.destination-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+.destination-card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+.explore-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  color: white;
+/*  cursor: pointer;*/
+ /* transition: all 0.3s ease;*/
+}
+
+.explore-btn:hover {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+/*  transform: scale(1.05);*/
+}
+
+.loginup{
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+
+}
+.login{
+    transform: translateY(-10px);
+    border-radius: 20px;
+    background: black;
+    color:white;
+    font: bold;
+    font-size: 20px;
+}
+.sign{
+    transform: translateY(-10px);
+    border-radius: 20px;
+    background: black;
+    color: white;
+    font: bold;
+    font-size: 20px;
+}
+.login:hover{
+  transform: translateY(-10px);
+  background: coral;
+}
+.sign:hover{
+  transform: translateY(-10px);
+  background: coral;
+}
+.p{
+  color: black;
+}

@@ -1,0 +1,15 @@
+html,body, #root{
+  margin: 0%;
+  padding: 0%;
+  height: 100%;
+}
+.card{
+  height: 100vh;
+  width: 100%;
+background-image: url('https://images.pexels.com/photos/1430677/pexels-photo-1430677.jpeg?cs=srgb&dl=pexels-asadphoto-1430677.jpg&fm=jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+}
+

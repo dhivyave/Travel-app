@@ -1,0 +1,90 @@
+.room-search-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.room-search-container h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.search-controls {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.search-controls div {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-controls label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.search-controls input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-controls button {
+  padding: 8px 16px;
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 18px;
+}
+
+.search-controls button:hover {
+  background-color: #005bb5;
+}
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.room-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.room-card:hover {
+  transform: scale(1.02);
+}
+
+.room-card h3 {
+  margin-top: 0;
+  color: #0077ff;
+}
+
+.room-card p {
+  margin: 5px 0;
+}
+
+.room-card button {
+  padding: 6px 12px;
+  margin-top: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.room-card button:hover {
+  background-color: #1e7e34;
+}
